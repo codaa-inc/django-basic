@@ -23,9 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'ljmirtl(f@7n(xf-3@m9rrn89r4ayv$=2uph6^mk5h^f778g$j'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True    # 배포시 False
+DEBUG = False    # 배포시 False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    'localhost',
+    '.ap-northeast-2.compute.amazonaws.com',
+]
 
 
 # Application definition
